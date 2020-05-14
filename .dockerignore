@@ -1,0 +1,9 @@
+.git
+.sonar
+dist
+node_modules
+coverage
+bin
+Dockerfile
+Jenkinsfile
+test-report.xml
