@@ -8,7 +8,7 @@ export class Async<T> {
     this.underlying = o
   }
 
-  static from<T>(o: T) {
+  static of<T>(o: T) {
     return new Async(this.objectToPromise(o))
   }
 
@@ -57,27 +57,4 @@ export class Async<T> {
       return Promise.resolve(o)
     }
   }
-}
-
-async function awaitTestSequence() {
-  let result1 = await slowPromise("1", 1000, 10)
-  let result2 = await slowPromise("2", 1000, 20);
-
-  return result1 + result2
-}
-
-async function asyncTestSequence() {
-  return await Async.from({
-    result1: slowPromise("1", 1000, 10),
-    result2: slowPromise("2", 1000, 20)
-  }).then((data) => {
-    return slowPromise("3", 10, data.result1 + data.result2)
-  }).yield()
-}
-
-function slowPromise<T>(identifier: string, timeout: number, result: T): Promise<T> {
-  return new Promise((resolve) => {
-    console.log(`Starting promise: ${identifier}`)
-    setTimeout(() => resolve(result), timeout)
-  })
 }
