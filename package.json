@@ -1,12 +1,9 @@
 {
-  "name": "higher-order-promise",
-  "version": "1.0.0",
+  "name": "@liveramp/higher-order-promise",
+  "version": "1.0.1",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://library.liveramp.net/artifactory/api/npm/npm/"
-  },
   "files": [
     "dist/**/*"
   ],

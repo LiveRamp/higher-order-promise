@@ -9,7 +9,11 @@ For examples of usage, check out its [tests](test/higher-order-promise.test.ts).
 
 ## Installation
 
-Package publishing is currently blocked as we set up a public LiveRamp org on NPM.
+This package is distributed via NPM:
+
+```
+npm install @liveramp/higher-order-promise
+```
 
 ## In-depth justification
 The usual way of handling asynchronous computation in Typescript is leveraging async/await. This is reasonably intuitive while keeping you out of callback hell.
