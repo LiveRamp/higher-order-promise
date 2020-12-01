@@ -9,10 +9,12 @@ For examples of usage, check out its [tests](test/higher-order-promise.test.ts).
 
 ## Installation
 
-This package is distributed via NPM:
+If you'd like to fiddle around with it, try it out on [RunKit](https://runkit.com/npm/%40liveramp%2Fhigher-order-promise)!
+
+This [package](https://www.npmjs.com/package/@liveramp/higher-order-promise) is distributed using NPM. To use in your project:
 
 ```
-npm install @liveramp/higher-order-promise
+npm install @liveramp/typed-mutations
 ```
 
 ## In-depth justification
