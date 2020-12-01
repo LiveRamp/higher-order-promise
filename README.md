@@ -14,7 +14,7 @@ If you'd like to fiddle around with it, try it out on [RunKit](https://runkit.co
 This [package](https://www.npmjs.com/package/@liveramp/higher-order-promise) is distributed using NPM. To use in your project:
 
 ```
-npm install @liveramp/typed-mutations
+npm install @liveramp/higher-order-promise
 ```
 
 ## In-depth justification
